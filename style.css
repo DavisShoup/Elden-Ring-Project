@@ -1,29 +1,44 @@
+@font-face {
+    font-family: Mantinia;
+    src: url(./Mantinia\ Regular.otf);
+}
+
 .container {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.3fr 0.3fr 2fr 0.6fr 0.6fr 0.4fr;
+    grid-template-rows: 0.3fr 0.3fr 2fr 1.2fr 0.4fr;
     grid-template-areas: 
     "header header"
     "image h1"
     "image main"
     "content1 content1"
-    "content2 content2"
     "footer footer";
     grid-gap: 1rem;
+    font-family: Mantinia;
+    font-weight: bold;
 }
 
 header {
     /* background-color: rgb(196, 203, 131); */
     grid-area: header;
     z-index: 100;
+    color: rgb(213, 202, 129);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background-color: rgba(0,0,0,.3);
+    font-size: 20px;
 }
 
-#logo{
-    
+.logo {
+    z-index: 100;
+    object-fit: cover;
+    max-height: 20%;
+    width: 4%;
+    filter: invert();
 }
 
 nav {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -31,43 +46,45 @@ nav {
     z-index: 100;
 }
 
-#image {
-    /* background-color: aquamarine; */
+.image {
     grid-area: image;
     object-fit: cover;
-    width: 100%;
+    width: 80%;
     max-height: 100%;
     z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#title {
-    /* background-color: blanchedalmond; */
+.title {
     grid-area: h1;
     z-index: 100;
+    background-color: rgba(0,0,0,.3);
 }
 
 main {
-    /* background-color: cyan; */
     grid-area: main;
     z-index: 100;
+    background-color: rgba(0,0,0,.3);
 }
 
-#content1 {
-    /* background-color:cornflowerblue; */
+.content1 {
     grid-area: content1;
     z-index: 100;
+    background-color: rgba(0,0,0,.3);
 }
 
-#content2 {
-    /* background-color: deepskyblue; */
+.content2 {
     grid-area: content2;
     z-index: 100;
+    background-color: rgba(0,0,0,.3);
 }
 
 footer {
-    /* background-color: darkcyan; */
     grid-area: footer;
     z-index: 100;
+    background-color: rgba(0,0,0,.3);
 }
 
 video {
@@ -78,3 +95,4 @@ video {
     height: 100%;
     object-fit: cover;
 }
+
