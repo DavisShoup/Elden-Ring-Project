@@ -46,6 +46,18 @@ nav {
     z-index: 100;
 }
 
+.wrap{
+    grid-area: image;
+    object-fit: cover;
+    width: 80%;
+    max-height: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
 .image {
     grid-area: image;
     object-fit: cover;
@@ -55,6 +67,68 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
+}
+
+.image2 {
+    grid-area: image;
+    object-fit: cover;
+    width: 40%;
+    max-height: 100%;
+    z-index: 90;
+    justify-content: center;
+    align-items: center;
+    transform: scaleX(-1);
+    margin: auto;
+    margin-left:130px;
+}
+
+.image3 {
+    grid-area: image;
+    object-fit: cover;
+    width: 40%;
+    max-height: 100%;
+    z-index: 90;
+    transform: scaleX(-1);
+    margin: auto;
+    margin-right: 150px;
+}
+
+.image4 {
+    grid-area: image;
+    object-fit: cover;
+    width: 40%;
+    max-height: 100%;
+    z-index: 91;
+    display: flex; 
+    transform: scaleX(-1);
+    margin: auto;
+}
+
+.image5 {
+    grid-area: image;
+    object-fit: cover;
+    width: 40%;
+    max-height: 100%;
+    z-index: 80;
+    display: flex; 
+    transform: scaleX(-1);
+    margin: auto;
+    margin-right: 0px;
+}
+
+.image6 {
+    grid-area: image;
+    object-fit: cover;
+    width: 40%;
+    max-height: 100%;
+    z-index: 80;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scaleX(-1);
+    margin: auto;
+    margin-left: 0px;
 }
 
 .title {
