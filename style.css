@@ -17,16 +17,18 @@
     grid-gap: 1rem;
     font-family: Mantinia;
     font-weight: bold;
+    color: #d1b175;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 header {
-    /* background-color: rgb(196, 203, 131); */
     grid-area: header;
     z-index: 100;
     color: #d1b175;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     background-color: rgba(0,0,0,.3);
     font-size: 20px;
+
 }
 
 .logo {
@@ -46,22 +48,10 @@ nav {
     z-index: 100;
 }
 
-.wrap{
-    grid-area: image;
-    object-fit: cover;
-    width: 80%;
-    max-height: 100%;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-}
-
 .image {
     grid-area: image;
     object-fit: cover;
-    width: 85%;
+    width: 80%;
     max-height: 100%;
     z-index: 100;
     display: flex;
@@ -109,3 +99,7 @@ video {
     object-fit: cover;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
