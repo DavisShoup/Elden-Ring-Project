@@ -1,40 +1,19 @@
-// const URL = "https://eldenring.fanapis.com/api/items?limit=2";
+const weaponURL = "https://eldenring.fanapis.com/api/weapons";
 
-// const $weaponImage = $('image');
-// const $weaponName = $('title');
-// const $form = $('form');
-// const $input = $('input[type="text"]');
-
-
-
-// function handleGetData (event) {
-//     event.preventDefault();
-//     const userInput = $input.val();
-//     $.ajax(URL + userInput).then(function(data){
-//         console.log('data is ready');
-//         $weaponName.text(data.item.name);
-//     }, function(error){
-//         console.log('error');
-//     })
-// }
-
-const weaponURL = "https://eldenring.fanapis.com/api/weapons?limit=100";
-const $main = $('main');
-const $title = $('.title');
-const $image = $('.image');
-
-const weaponAxes = [];
-
+function createWeapon (weapon) {
+    const $description = $("<p>", { class: "description" });
+    const $title = $("<h2>", { class: "title" });
+    const $image = $("<img>", { class: "image" });
+    $title.text(weapon.name);
+    $description.text(weapon.description);
+    $image.attr("src", weapon.image);
+    return $('<div/>').append($title).append($image).append($description);
+}
 $.ajax(weaponURL).then(function(response){
-    console.log(response.data)
-    response.data.forEach(element => {
-        $title.text(element.name);
-        $main.text(element.description);
-        $image.attr("src", element.image);
-        
-    });
+    const weaponData = response.data;
+    const $weapons = weaponData.map(weapon => createWeapon(weapon));
+    $('.main').append($weapons);
 }, function(error) {
     console.log('error');
     console.log(error);
 });
-
