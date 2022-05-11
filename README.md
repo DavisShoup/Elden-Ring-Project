@@ -12,4 +12,4 @@ A web application that displays Elden Ring data
 # Future Enhancements
 - I want to add more Elden Ring data into the website.
 - Include a drop down menu to the nav bar so the user can search through the website easier.
-- Implement an Elden Ring calculator to create builds to review stat results 
+- Implement an Elden Ring calculator to create builds to review stat results
