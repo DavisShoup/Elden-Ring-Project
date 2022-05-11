@@ -1,6 +1,6 @@
 // WEAPON FUNCTION (BELOW)
 
-const weaponURL = "https://eldenring.fanapis.com/api/weapons?limit=100";
+const weaponURL = "https://eldenring.fanapis.com/api/weapons?limit=100"; // declaring 
 
 function createWeapon(weapon) {
     const $description = $("<p>", { class: "description" });

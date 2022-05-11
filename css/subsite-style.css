@@ -249,3 +249,8 @@ a {
     margin: auto;
     font-size: 1.6vh;
 }
+
+a:hover {
+    background-color: rgba(0,0,0,.4);
+    border-radius: 3px;
+}
