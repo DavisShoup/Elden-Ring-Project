@@ -10,6 +10,6 @@ A web application that displays Elden Ring data
 ![image](https://imgur.com/lW6KHje)
 # Link To The Deployment
 # Future Enhancements
-- I want to implement more Elden Ring data into my website.
-- Include a drop down menu to the nav bar so the user can filter through specific parts of the site.
-- Implement an Elden Ring calculator to create builds to review stat results.
+- I want to add more Elden Ring data into the website.
+- Include a drop down menu to the nav bar so the user can search through the website easier.
+- Implement an Elden Ring calculator to create builds to review stat results
