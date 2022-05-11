@@ -19,7 +19,7 @@ function createWeapon(weapon) {
 $.ajax(weaponURL).then(function(response){
     const weaponData = response.data;
     const $weapons = weaponData.map(weapon => createWeapon(weapon));
-    $('.main').append($weapons);
+    $('.main').append($weapons); 
 }, function(error) {
     console.log('error');
     console.log(error);
