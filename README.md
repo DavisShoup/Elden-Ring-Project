@@ -7,7 +7,7 @@ A web application that displays Elden Ring data
 - jQuery
 # Screenshots
 ![image](https://i.imgur.com/KtxAIH2.png)
-![image](https://imgur.com/lW6KHje)
+![image](https://i.imgur.com/lW6KHje.png)
 # Link To The Deployment
 - https://davisshoup.github.io/Elden-Ring-Project/
 # Future Enhancements
